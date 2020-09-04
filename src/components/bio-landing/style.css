@@ -1,0 +1,84 @@
+.bl-s-w {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bl-s-w .h {
+    font-size: 120px;
+    font-family: fantasy;
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: white
+}
+
+.bl-s-w .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.bl-s-w .svg {
+    width: 40px;
+    height: 40px;
+    margin: 24px;
+    cursor: pointer;
+    transition: ease-in all 0.2s;
+}
+
+.bl-s-w .svg:hover {
+    transform: scale(1.4);
+}
+
+.bl-s-w b {
+    font-family: 'Electro';
+}
+
+.bl-s-w span {
+    color: #0652DD;
+}
+
+.bl-s-w .sh {
+    font-size: 42px;
+    font-family: 'Electro', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    color: #0652DD;
+    margin-top: 24px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .bl-s-w {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 80px);
+    }
+
+    .bl-s-w .h {
+        width: 90%;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .bl-s-w .sh {
+        width: 90%;
+        font-size: 36px;
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .bl-s-w .flex {
+        margin-top: 12px;
+    }
+
+    .bl-s-w .svg {
+        width: 36px;
+        height: 36px;
+        margin: 18px;
+    }
+}

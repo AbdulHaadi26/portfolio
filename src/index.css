@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Electro';
+    src: url('./assets/ElectroShackle-Yrvy.ttf') format('truetype');
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 300px;
+  scrollbar-width: thin;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media only screen and (max-width:992px) {
+  body {
+    line-height: 1.5rem !important;
+  }
+}

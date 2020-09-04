@@ -1,0 +1,42 @@
+.row {
+    min-height: 100vh;
+}
+
+.mH{
+    min-height: 30vh !important;
+}
+
+.sup-h {
+    width: 100%;
+    margin: 12px 30px 12px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sup-h .sup-ah {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.sup-h .sup-sub-h {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sup-h hr {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.sup-h .sup-sh {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+}

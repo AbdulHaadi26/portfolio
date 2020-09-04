@@ -1,0 +1,164 @@
+.l-w {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-s-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80%;
+}
+
+.l-s-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.l-s-1 .svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: ease-in all 0.2s;
+}
+
+.l-s-1 .svg:hover {
+    transform: scale(1.4);
+}
+
+.l-s-1 hr {
+    width: 100%;
+    height: 2px;
+    background-color: #0652DD;
+    margin-bottom: auto;
+}
+
+.l-s-w {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.l-s-w .f-h {
+    width: 100%;
+    background: linear-gradient(90deg, #0652DD 5%, transparent 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+    padding: 24px 18px 0px 18px;
+}
+
+.l-s-w .h {
+    font-size: 64px;
+    font-family: 'Electro', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.l-s-w .f-h-1 {
+    margin-top: 40px;
+    padding: 6px 12px 0px 18px;
+    background: linear-gradient(90deg, #fff 1%, transparent 1%);
+    animation: fadeIn 4s;
+    animation-fill-mode: forwards;
+}
+
+.l-s-w .sh1 {
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.l-s-w .sh {
+    font-size: 24px;
+    font-family: 'Electro', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.l-s-w .l-sub-w {
+    width: 60%;
+}
+
+.l-s-w .bt {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    font-family: 'Teko', sans-serif;
+    font-size: 18px;
+    margin-top: 60px;
+    padding: 15px 48px 8px 48px;
+    transition: background-color 0.5s ease-in;
+    animation: fadeIn 4s;
+    animation-fill-mode: forwards;
+    letter-spacing: 2px;
+}
+
+.l-s-w .bt:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+    background-color: white;
+    color: #0652DD;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .l-w,
+    .l-s-2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .l-s-w .l-sub-w {
+        width: 85%;
+    }
+
+    .l-w .h {
+        font-size: 64px;
+    }
+
+    .l-w .sh,
+    .l-w .sh1 {
+        font-size: 18px;
+    }
+
+    .l-w .f-h {
+        background: linear-gradient(90deg, #0652DD 7%, transparent 7%);
+        padding: 24px 0px 0px 12px;
+    }
+
+    .l-s-1 {
+        display: none;
+    }
+
+    .l-w .ht {
+        min-height: calc(100vh - 80px);
+    }
+
+    .l-w .l-n {
+        display: none;
+    }
+}

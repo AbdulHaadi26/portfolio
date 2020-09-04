@@ -1,0 +1,123 @@
+.wk-w {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.wk-w .projs {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.wk-w h1 {
+    font-family: 'Playfair Display', sans-serif;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px
+}
+
+.wk-w .h {
+    width: 30%;
+}
+
+.wk-w .p-sub {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wk-w p {
+    color: white;
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+    margin-top: 48px;
+    margin-bottom: 36px;
+    letter-spacing: 2px;
+}
+
+.wk-w .b-d {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.wk-w .link {
+    background-image: url('../../assets/link.svg');
+    width: 36px;
+    height: 36px;
+    margin-left: 24px;
+    transition: ease-in-out 0.3s;
+}
+
+.wk-w .link:hover {
+    transform: scale(1.1);
+}
+
+.wk-w .flex-wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wk-w .flex-wrap img {
+    width: 35px;
+    height: 35px;
+    margin-right: 24px;
+    margin-bottom: 36px;
+}
+
+@keyframes slideInL {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInR {
+    0% {
+        transform: translateX(900px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .wk-w .projs {
+        flex-direction: column;
+        width: 90%;
+        margin: 50px 0px 50px 0px;
+        line-height: 2.5rem !important;
+    }
+
+    .wk-w .p-sub {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .wk-w h1 {
+        font-size: 36px;
+    }
+
+    .wk-w .flex-wrap {
+        width: 100%
+    }
+
+}

@@ -1,0 +1,213 @@
+.nav {
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.st {
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    background-color: white;
+    color: black;
+}
+
+.nav .n {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav .sub {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav .sub:hover {
+    color: #636e72;
+}
+
+.nav .sub:hover .svg-m,
+.nav .sub:hover .svg-m2 {
+    background-image: url('../../assets/mG.svg');
+}
+
+.nav .l {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #2d3436;
+    cursor: pointer;
+    font-weight: 300;
+    margin: 24px 24px 0px 64px;
+}
+
+.nav .a {
+    color: #0652DD !important;
+}
+
+.nav .l:hover {
+    color: #0652DD;
+}
+
+.nav .h {
+    font-family: 'Electro', cursive;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav .logo {
+    width: 30px;
+    height: 30px;
+}
+
+.nav .sh {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 0px 0px 0px 6px;
+}
+
+.nav .bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background-color: #fff;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav .sN {
+    background-color: #fff;
+}
+
+.nav .sNB {
+    background-color: #000;
+}
+
+.nav .sNS {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.icons .svg {
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: ease-in all 0.2s;
+}
+
+.icons .svg:hover {
+    transform: scale(1.4);
+}
+
+.nav .svg-m,
+.nav .svg-m2,
+.nav .svg-x {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.nav .svg-m {
+    background-image: url('../../assets/mW.svg');
+}
+
+.nav .svg-m2 {
+    background-image: url('../../assets/m.svg');
+}
+
+.nav .svg-x {
+    margin: 40px 40px 0px auto;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../assets/cross.svg');
+    transition: ease-in all 0.2s;
+}
+
+.nav .svg-x:hover {
+    transform: scale(1.1);
+}
+
+.d-enter {
+    opacity: 0.01;
+}
+
+.d-enter.d-enter-active {
+    opacity: 1;
+    transition: opacity 200ms ease-in;
+}
+
+.d-leave {
+    opacity: 1;
+}
+
+.d-leave.d-leave-active {
+    opacity: 0.01;
+    transition: opacity 100ms ease-out;
+}
+
+@media only screen and (max-width: 1440px) {
+    .nav .svg-x {
+        margin: 40px 34px 0px auto;
+    }
+
+    .nav .l {
+        margin: 24px 24px 0px 44px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .nav .sNS {
+        width: 60%;
+    }
+
+    .nav .svg-x {
+        margin: 40px 44px 0px auto;
+    }
+
+    .nav .l {
+        margin: 24px 24px 0px 34px;
+    }
+
+    .nav .sub {
+        margin-top: -8px;
+    }
+}
