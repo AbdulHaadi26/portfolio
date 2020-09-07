@@ -13,7 +13,7 @@ export default () => <div className="c-w">
             <ul>
                 <li onClick={e => window.open('https://web.facebook.com/AbdulHadiSpeedster')}>Facebook</li>
                 <li onClick={e => window.open('https://github.com/AbdulHaadi26')}>Github</li>
-                <li onClick={e => window.open('https://www.linkedin.com/in/abdulhaadirana')}>Instagram</li>
+                <li onClick={e => window.open('https://www.linkedin.com/in/abdulhaadirana')}>Linkedin</li>
             </ul>
         </div>
     </div>
