@@ -24,7 +24,7 @@ export default () => <div className="wk-w">
             <div className="flex-wrap">
                 {icons[k].map(j => <img src={j} alt="language" />)}
             </div>
-            <a href={i.url} className="b-d">Launch<div className="link" /></a>
+            <a href={i.url} rel="noopener noreferrer" target="_blank" className="b-d">Launch<div className="link" /></a>
         </div>
     </div>)}
 </div>

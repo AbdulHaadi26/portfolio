@@ -11,7 +11,7 @@ export default () => <div className="c-w">
         </div>
         <div className="col-lg-3" style={{ animation: `fadeIn 4s` }}>
             <ul>
-                <li onClick={e => window.open('https://web.facebook.com/AbdulHadiSpeedster')}>Facebook</li>
+                <li onClick={e => window.open('https://web.facebook.com/AbdulHaadiSpeedster')}>Facebook</li>
                 <li onClick={e => window.open('https://github.com/AbdulHaadi26')}>Github</li>
                 <li onClick={e => window.open('https://www.linkedin.com/in/abdulhaadirana')}>Linkedin</li>
             </ul>

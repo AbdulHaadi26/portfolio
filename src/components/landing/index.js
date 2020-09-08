@@ -4,7 +4,7 @@ import IN from '../../assets/in.svg';
 import LK from '../../assets/lnk.svg';
 import './style.css';
 import history from '../../utils/history';
-var list = [{ i: FB, u: 'https://web.facebook.com/AbdulHadiSpeedster' }, { i: IN, u: 'https://github.com/AbdulHaadi26' }, { i: LK, u: 'https://www.linkedin.com/in/abdulhaadirana' }];
+var list = [{ i: FB, u: 'https://web.facebook.com/AbdulHaadiSpeedster' }, { i: IN, u: 'https://github.com/AbdulHaadi26' }, { i: LK, u: 'https://www.linkedin.com/in/abdulhaadirana' }];
 
 export default () => <div className="l-w">
     <div className="col-lg-11 col-12 l-s-2 p-0">
