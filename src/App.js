@@ -5,9 +5,7 @@ import './assets/teko.css';
 import Routes from './routes';
 
 export default () => <Suspense fallback={<></>}>
-  <video autoPlay muted loop onContextMenu={e => e.preventDefault()}>
-    <source src={VBG} type="video/mp4" />
-  </video>
+  <video src={VBG} type="video/mp4" autoPlay muted loop onContextMenu={e => e.preventDefault()} />
   <Routes />
 </Suspense>
 
