@@ -112,6 +112,14 @@ window.addEventListener('activate', function (event) {
 });
 
 
+window.addEventListener('fetch', function (event) {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
+    }))
+});
+
+
 function checkValidServiceWorker(swUrl, config) {
   // Check if the service worker can be found. If it can't reload the page.
   fetch(swUrl, {
